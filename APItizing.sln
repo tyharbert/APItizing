@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APItizing", "APItizing\APItizing.csproj", "{E8E00C51-842B-416A-BBAA-DCF8DE9A6C95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8E00C51-842B-416A-BBAA-DCF8DE9A6C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E00C51-842B-416A-BBAA-DCF8DE9A6C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E00C51-842B-416A-BBAA-DCF8DE9A6C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E00C51-842B-416A-BBAA-DCF8DE9A6C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E6785FA-055C-4800-BF91-0CF2B356A82D}
+	EndGlobalSection
+EndGlobal
