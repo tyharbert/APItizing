@@ -34,8 +34,8 @@ namespace APItizing.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Snack>> Get([FromQuery] SnackFilters snackFilters)
         {
-            return _snackRepository.Browse(snackFilters)
-                .ToList();
+            return Ok(_snackRepository.Browse(snackFilters)
+                .ToList());
         }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace APItizing.Controllers
                 return NotFound($"Snack '{id}' not found.");
             }
 
-            return snack;
+            return Ok(snack);
         }
 
         #endregion
@@ -72,7 +72,7 @@ namespace APItizing.Controllers
         [HttpPost]
         public ActionResult<Snack> Post(Snack snack)
         {
-            return _snackRepository.Create(snack);
+            return Ok(_snackRepository.Create(snack));
         }
 
         #endregion
@@ -106,7 +106,7 @@ namespace APItizing.Controllers
             dbSnack.Name = snack.Name;
             dbSnack.Calories = snack.Calories;
 
-            return _snackRepository.Update(id, dbSnack);
+            return Ok(_snackRepository.Update(id, dbSnack));
         }
 
         #endregion
@@ -131,7 +131,7 @@ namespace APItizing.Controllers
 
             snackPatch.ApplyTo(dbSnack);
 
-            return _snackRepository.Update(id, dbSnack);
+            return Ok(_snackRepository.Update(id, dbSnack));
         }
 
         #endregion
